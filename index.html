@@ -79,9 +79,20 @@
           width="100%"
         />
       </div>
+      <div class="card">
+        <img
+          src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+          class="placeholder-image"
+        />
+        <img
+          data-src="https://myanimelist.cdn-dena.com/images/characters/8/324560.jpg"
+          alt="sagiri desu!"
+          width="100%"
+        />
+      </div>
     </div>
     <script>
-      [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+      document.querySelectorAll('img[data-src]').forEach(function(img) {
         img.setAttribute('src', img.getAttribute('data-src'));
         img.onload = function() {
           img.removeAttribute('data-src');
